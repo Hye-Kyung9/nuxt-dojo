@@ -1,9 +1,9 @@
 <template>
   <div>
-    <header>
-      <nav>
-        <NuxtLink to="/">HK NUXT DOJO</NuxtLink>
-        <ul>
+    <header class="shadow-sm bg-white">
+      <nav class="container mx-auto p-4 flex justify-between">
+        <NuxtLink to="/" class="font-bold">HK NUXT DOJO</NuxtLink>
+        <ul class="flex gap-4">
           <li>
             <NuxtLink to="/">HOME</NuxtLink>
           </li>
@@ -11,14 +11,13 @@
             <NuxtLink to="/about">ABOUT</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/products">PRODUCTS</NuxtLink>
+            <NuxtLink to="/products" class="btn">PRODUCTS</NuxtLink>
           </li>
-          <a href="/about">normal link- about page</a>
         </ul>
       </nav>
     </header>
 
-    <div>
+    <div class="container mx-auto p-4">
       <slot />
     </div>
 

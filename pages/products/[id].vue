@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>Product details for {{ id }}</p>
-    <p>Lorem Ipsem 1</p>
+    <p>Lorem Ipsem</p>
   </div>
 </template>
 
