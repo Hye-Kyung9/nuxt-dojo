@@ -9,11 +9,19 @@
 </template>
 
 <script setup>
-import ProductCard from '~/components/ProductCard.vue';
+  import ProductCard from '~/components/ProductCard.vue';
 
   definePageMeta({
     layout: 'products'
   })
 
-const {data : products} = await useFetch('https://fakestoreapi.com/products')
+  const { data: products } = await useFetch('https://fakestoreapi.com/products')
+  
+//override
+  useHead({
+    title: 'Nuxt Dojo | Merch',
+    meta: [
+      {name:'description', content:'Nuxt 3'}
+    ]
+  })
 </script>
