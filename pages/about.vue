@@ -9,11 +9,21 @@
       standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
       type specimen book.
     </p>
+    <div> {{ data }}</div>
   </div>
 </template>
 
 <script setup>
-
+const { data } = await useFetch('/api/ninja')
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+h2 { 
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+p {
+  margin: 20px 0;
+}
+</style>
